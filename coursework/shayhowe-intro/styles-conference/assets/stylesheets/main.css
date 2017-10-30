@@ -53,6 +53,7 @@ table {
   ========================================
 */
 body {
+	background: #293f50;
 	color: #888;
 	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -152,6 +153,20 @@ cite, em {
 
 /*
   ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+	text-align: center;
+}
+.lead p {
+	font-size: 21px;
+	line-height: 33px;
+}
+
+/*
+  ========================================
   Links
   ========================================
 */
@@ -166,6 +181,16 @@ a {
 p a {
 	border-bottom: 1px solid #dfe2e5;
 }
+
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
   
   /*
   ========================================
@@ -177,11 +202,20 @@ p a {
 	border-radius: 5px;
 	display: inline-block;
 	margin: 0;
+	color: #fff;
+	cursor: pointer;
+	font-weight: normal;
+	letter-spacing: .5px;
+	text-transform: uppercase;
 }
   
 .btn-alt {
-	border: 1px solid #dfe2e5;
+	border: 1px solid #fff;
 	padding: 10px 30px;
+}
+.btn-alt:hover {
+	background: #fff;
+	color: #648880;
 }
 
   /*
@@ -191,6 +225,7 @@ p a {
 */
 
 .hero {
+	color: #fff;
 	padding: 22px 80px 66px 80px;
 	line-height: 44px;
 	text-align: center;
@@ -205,6 +240,12 @@ p a {
 
 .teaser a:hover h3 {
 	color: #a9b2b9;
+}
+.teaser img {
+	display: block;
+	max-width: 100%;
+	border-radius: 5px;
+	margin-bottom: 22px;
 }
   
   /*
@@ -246,13 +287,6 @@ p a {
 	margin: 66px 0 22px 0;
 	text-align: right;
 }
-
-.primary-nav {
-	font-size: 14px;
-	font-weight: normal;
-	letter-spacing: .5px;
-	text-transform: uppercase;
-}
   
   /*
   ========================================
@@ -278,7 +312,85 @@ p a {
   ========================================
 */
 
+.primary-nav {
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+
 .nav {
 	text-align: right;
 }
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.nav li:last-child {
+	margin-right: 0;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row,
+.row-alt {
+	min-width: 960px;
+}
+.row {
+	background: #fff;
+	padding: 66px 0 44px 0;
+}
+.row-alt {
+	background: #cbe2c1;
+	background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+	background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+	background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+	padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
   
+.speaker-info {
+	border: 1px solid #dfe2e5;
+	border-radius: 5px;
+	margin-top: 88px;
+	padding-bottom: 22px;
+	text-align: center;
+}
+.speaker-info img {
+	border-radius: 50%;
+	height: 130px;
+	vertical-align: top;
+	margin: -66px 0 22px 0;
+}
+
+.speaker {
+	margin-bottom: 44px;
+}
+
+/*
+  ========================================
+  Venue
+  ========================================
+*/
+
+.venue-theatre {
+	margin-bottom: 66px;
+}
+
+.venue-hotel {
+	margin-bottom: 22px;
+}
+
+.venue-map {
+	height: 264px;
+}
