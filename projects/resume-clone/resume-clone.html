@@ -4,49 +4,89 @@
         <meta charset="utf-8">
         <title>Resume Clone</title>
         <link rel="stylesheet" href="assets/stylesheets/resume-clone.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500">
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li>Hello</li><!--
-                    --><li>Resume</li><!--
-                    --><li>Portfolio</li>
+                    <li><a href="">HELLO</a></li><!--
+                    --><li class="selected"><a href="">RESUME</a></li><!--
+                    --><li><a href="">PORTFOLIO</a></li>
                 </ul>
             </nav>
-            <section>
-                <h1>Travis Cox</h1>
-                <h3>Future Frontend Developer</h3>
-                <img src="" alt="">
+            <section class="clearfix">
+                <div>
+                    <img src="assets/images/thinking-travis.jpg" alt="Travis Cox deep in contemplation">
+                </div>
+                <div class="focus">
+                    <h1>David Brown</h1>
+                    <h3>Architect</h3>
+                </div>
             </section>
         </header>
-        <section>
-            <p>I don't know what goes here</p>
+        <section class="intro">
+            <p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Curabitur blandit tempus portitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </section>
-        <section>
+        <aside class="col-2-5 left">
             <!-- Left 1/3 Column -->
-            <div>
-                <!-- Personal -->
-            </div>
-            <div>
-                <!-- Software -->
-            </div>
-            <div>
-                <!-- Hobbies -->
-            </div>
-        </section>
-        <section>
+            <section>
+                <h2>Personal</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Name</th>
+                            <td>David Brown</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Birthday</th>
+                            <td>31st Dec 1990 (26)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Relationship</th>
+                            <td>Single</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nationality</th>
+                            <td>US Citizen</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Languages</th>
+                            <td>English, French</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Telephone</th>
+                            <td>+1 (212) 123-4567</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Software</h2>
+                <p>Indesign CC</p>
+                <p>Illustrator CC</p>
+                <p>Photoshop CC</p>
+                <p>Sketch 3</p>
+                <p>HTML 5</p>
+                <p>CSS 3</p>
+                      
+            </section>
+            <section>
+                <h2>Hobbies</h2>
+            </section>
+        </aside><!--
+        --><div class="col-3-5 inset-right">
             <!-- Right 2/3 Column -->
-            <div>
-                <!-- Work -->
-            </div>
-            <div>
-                <!-- Professional Skills -->
-            </div>
-            <div>
-                <!-- Education -->
-            </div>
-        </section>
+            <section>
+                <h2>Work</h2>
+            </section>
+            <section>
+                <h2>Professional Skills</h2>
+            </section>
+            <section>
+                <h2>Education</h2>
+            </section>
+        </div>
         <footer>
             <section>
                 <!-- Social Outlinks -->
