@@ -64,7 +64,7 @@ table {
  **********/
 
 body {
-	background-color: #566267;
+	background-color: #333;
 	color: #fff;
 	font: normal 12px/18px "Heebo", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 820px;
@@ -109,11 +109,16 @@ body {
 	padding: 25px 70px 25px 30px;
 }
 
+.inset-left,
+.inset-right {
+	background-color: #f8f8f8;
+}
+
 .inset-left {
-	box-shadow: inset -3px 0 5px rgba(0, 0, 0, .3);
+	box-shadow: inset -8px 0 5px -5px rgba(0, 0, 0, .3);
 }
 .inset-right {
-	box-shadow: inset 3px 0 5px rgba(0, 0, 0, .3);
+	box-shadow: inset 8px 0 5px -5px rgba(0, 0, 0, .3);
 }
 
 /**************
@@ -139,7 +144,7 @@ body {
 
 header section{
 	background-color: #00a2d6;
-	box-shadow: 0 4px 5px rgba(0, 0, 0, .3);
+	
 	padding-left: 70px;
 }
 header img {
@@ -154,8 +159,9 @@ header img {
 }
 
 .intro {
-	/*background-color: #566267;*/
+	background-color: #566267;
 	padding: 30px 70px 30px 70px;
+	box-shadow: inset 0 11px 5px -5px rgba(0, 0, 0, .3);
 	font: 300 15px/22px "Heebo", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -196,6 +202,7 @@ h1 {
 h2 {
 	font: 400 16px/24px "Heebo", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #4db1dd;
+	margin-top: 20px;
 }
 h3 {
 	font: 100 20px/30px "Heebo", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -215,7 +222,7 @@ th {
 }
 th,
 td {
-	padding: 4px 4px 8px 0;
+	padding: 8px 4px 8px 0;
 	border-bottom: 1px solid #ddd;
 }
 
@@ -223,8 +230,54 @@ td {
  * 8. DESIGN ELEMENTS
  *********************/
 
+.bar-100,
+.bar-90,
+.bar-80,
+.bar-70,
+.bar-60,
+.bar-50 {
+	width:100%;
+	height: 6px;
+}
+
 .bar-100 {
-	width: 100%;
-	height: 8px;
+	background-color: #00a2d6;
+}
+.bar-90 {
+	background-image: linear-gradient(to right, #00a2d6 90%, #fff 90%, #ddd 91%);
+}
+.bar-80 {
+	background-image: linear-gradient(to right, #00a2d6 80%, #fff 80%, #ddd 81%);
+}
+.bar-70 {
+	background-image: linear-gradient(to right, #00a2d6 70%, #fff 70%, #ddd 71%);
+}
+.bar-60 {
+	background-image: linear-gradient(to right, #00a2d6 60%, #fff 60%, #ddd 61%);
+}
+.bar-50 {
+	background-image: linear-gradient(to right, #00a2d6 50%, #fff 50%, #ddd 51%);
+}
+
+.blockify p {
+	display: inline-block;
+	width: 40%;
+}
+.blockify div {
+	display: inline-block;
+	width: 60%;
+}
+
+/***********
+ * 9. ICONS
+ ***********/
+
+.icon-light {
+	color: #a3d5f5;
+}
+.icon-dark {
 	background-color: #008dd0;
+}
+.spacer {
+	text-align: justify;
 }
