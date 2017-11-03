@@ -202,7 +202,7 @@ h1 {
 h2 {
 	font: 400 16px/24px "Heebo", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #4db1dd;
-	margin-top: 20px;
+	margin-top: 20px
 }
 h3 {
 	font: 100 20px/30px "Heebo", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -222,8 +222,11 @@ th {
 }
 th,
 td {
-	padding: 8px 4px 8px 0;
 	border-bottom: 1px solid #ddd;
+}
+
+td {
+	padding: 8px 0 8px 0;
 }
 
 .col-3-5 th {
@@ -231,7 +234,10 @@ td {
 	padding: 12px 0px 0 0;
 }
 .col-3-5 td {
-	padding: 6px 4px 6px 0;
+	padding: 6px 0 6px 0;
+}
+table:first-child th {
+	padding: 0;
 }
 
 /*********************
@@ -290,6 +296,7 @@ td {
 }
 .ring-bg {
 	border-color: #ddd;
+	margin: 10px 0 0 10px;
 }
 .ring-100 {
 	border-color: #00a2d6;
@@ -321,13 +328,24 @@ td {
 	transform: rotate(-36deg);
 }
 
-.ring-static p {
-	margin: auto;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+.correct-90 {
+	transform: rotate(99deg);
+}
+.correct-80 {
+	transform: rotate(63deg);
+}
+.correct-70 {
+	transform: rotate(27deg);
+}
+.correct-60 {
+	transform: rotate(-9deg);
+}
+
+.centered {
+	text-align: center;
+	line-height: 58px;
+	font-weight: 500;
+	font-size: 9px;
 }
 
 /***********
