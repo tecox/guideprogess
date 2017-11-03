@@ -226,6 +226,14 @@ td {
 	border-bottom: 1px solid #ddd;
 }
 
+.col-3-5 th {
+	border: none;
+	padding: 12px 4px 0 0;
+}
+.col-3-5 td {
+	padding: 6px 4px 6px 0;
+}
+
 /*********************
  * 8. DESIGN ELEMENTS
  *********************/
@@ -335,3 +343,7 @@ td {
 .spacer {
 	text-align: justify;
 }
+
+/************
+ * 10. LISTS
+ ************/
