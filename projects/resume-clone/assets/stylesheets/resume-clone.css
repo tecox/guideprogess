@@ -239,7 +239,6 @@ td {
 	width:100%;
 	height: 6px;
 }
-
 .bar-100 {
 	background-color: #00a2d6;
 }
@@ -266,6 +265,61 @@ td {
 .blockify div {
 	display: inline-block;
 	width: 60%;
+}
+
+.ring-bg,
+.ring-static,
+.ring-100,
+.ring-90,
+.ring-80,
+.ring-70,
+.ring-60 {
+	border: 6px solid;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	display: inline-block;
+}
+.ring-bg {
+	border-color: #ddd;
+}
+.ring-100 {
+	border-color: #00a2d6;
+}
+.ring-static,
+.ring-90,
+.ring-80,
+.ring-70,
+.ring-60 {
+	border-color: #00a2d6;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	margin-top: -6px;
+	margin-left: -6px;
+}
+.ring-static {
+	transform: rotate(45deg);
+}
+.ring-90 {
+	transform: rotate(-144deg);
+}
+.ring-80 {
+	transform: rotate(-108deg);
+}
+.ring-70 {
+	transform: rotate(-72deg);
+}
+.ring-60 {
+	transform: rotate(-36deg);
+}
+
+.ring-static p {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 /***********
