@@ -52,16 +52,16 @@ table {
  *
  * -1: CSS Reset
  *  0: Table of Contents
- *  1: Body
+ *  1: Custom Styles
  *  2: Header
  *  3:
  *  4:
  *  5:
  *************************/
 
-/**********
- * 1. BODY
- **********/
+/*******************
+ * 1. CUSTOM STYLES
+ *******************/
 
 body {
 	background-color: #333;
@@ -70,6 +70,14 @@ body {
 	width: 820px;
 	margin: 0 auto;
 	text-align: left;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
 }
 
 /*************
@@ -85,11 +93,11 @@ body {
  }
 
 .col-2-5 {
-	width: 40%;
+	width: 38.33%;
 }
 
 .col-3-5 {
-	width: 60%;
+	width: 61.66%;
 }
 
 .col-2-5,
@@ -102,11 +110,11 @@ body {
 
 .left,
 .inset-left {
-	padding: 25px 30px 25px 70px;
+	padding: 30px 30px 0 70px;
 }
 .right,
 .inset-right {
-	padding: 25px 70px 25px 30px;
+	padding: 30px 70px 0 30px;
 }
 
 .inset-left,
@@ -119,6 +127,23 @@ body {
 }
 .inset-right {
 	box-shadow: inset 8px 0 5px -5px rgba(0, 0, 0, .3);
+}
+
+.left section,
+.right section,
+.inset-left section,
+.inset-right section {
+	margin-bottom: 20px;
+}
+
+.short {
+
+}
+.mid {
+	height: 650px;
+}
+.tall {
+
 }
 
 /**************
@@ -174,13 +199,6 @@ nav {
 	padding: 15px 0 0 55px;
 	font-weight: 100;
 }
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
-nav a:hover {
-	font-weight: 400;
-}
 nav li {
 	display: inline-block;
 	padding-bottom: 5px;
@@ -202,7 +220,7 @@ h1 {
 h2 {
 	font: 400 16px/24px "Heebo", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #4db1dd;
-	margin-top: 20px
+	margin-bottom: 10px;
 }
 h3 {
 	font: 100 20px/30px "Heebo", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -219,6 +237,7 @@ table {
 }
 th {
 	font-weight: 500;
+	padding-top: 6px;
 }
 th,
 td {
@@ -226,18 +245,47 @@ td {
 }
 
 td {
-	padding: 8px 0 8px 0;
+	padding-bottom: 8px;
+}
+tr:first-child th {
+	padding: 0;
 }
 
 .col-3-5 th {
 	border: none;
-	padding: 12px 0px 0 0;
+	padding-top: 18px;
 }
 .col-3-5 td {
-	padding: 6px 0 6px 0;
+	padding: 4px 0 6px 0;
 }
-table:first-child th {
-	padding: 0;
+
+.borderize {
+	border-left: 1px solid #00a2d6;
+	padding-left: 20px;
+	margin-left: 10px;
+}
+.border-hide {
+	width: 6px;
+	height: 5px;
+	background-color: #f8f8f8;
+	position: absolute;
+	margin-left: 9px;
+}
+.impossibullet {
+	background-image: radial-gradient(#00a2d6 33%, rgba(0, 141, 208, .4) 37%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+}
+.first {
+	margin-top: -1px;
+}
+.second {
+	margin-top: 82px;
+}
+.third {
+	margin-top: 165px;
 }
 
 /*********************
@@ -290,13 +338,13 @@ table:first-child th {
 .ring-60 {
 	border: 6px solid;
 	border-radius: 50%;
-	height: 70px;
-	width: 70px;
+	height: 73px;
+	width: 73px;
 	display: inline-block;
 }
 .ring-bg {
 	border-color: #ddd;
-	margin: 10px 0 0 10px;
+	margin-left: 10px;
 }
 .ring-100 {
 	border-color: #00a2d6;
@@ -343,7 +391,7 @@ table:first-child th {
 
 .centered {
 	text-align: center;
-	line-height: 58px;
+	line-height: 61px;
 	font-weight: 500;
 	font-size: 9px;
 }
@@ -358,22 +406,56 @@ table:first-child th {
 .icon-dark {
 	color: #008dd0;
 }
-.spacer {
-	text-align: justify;
+.icon-space {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	margin: 0 4%;
+	border-radius: 50%;
+	background-color: #99caf0; /* 9fcdf5 90d2f6 8fbfef 93c7f0 99caf0 99cae9*/
+	vertical-align: top;
+}
+.icon-space:first-child {
+	margin-left: 0;
+}
+.icon-space:last-child {
+	margin-right: 0;
+}
+.icon-space i {
+	line-height: 60px;
+}
+.icon-space p {
+	font-size: 10px;
+	font-weight: 500;
 }
 
 /*************
  * 10. FOOTER
  *************/
 
-footer section{
+footer section {
 	 background-color: #00a2d6;
-	 padding: 5px 70px;
-	 text-align: center;
+	 padding: 14px 120px;
+	 text-align: left;
+	 font-size: 10px;
 }
-
 .contact {
 	background-color: #008dd0;
 	width: 100%;
-	font-size: 10px;
+	padding: 10px 70px;
+}
+footer .contact div {
+	width: 70%;
+	display: inline-block;
+	letter-spacing: 0.05em;
+}
+footer .contact div:last-child {
+	text-align: right;
+	width: 30%;
+}
+.alignment {
+	display: inline-block;
+	width: 33.33%;
+	text-align: center;
 }
