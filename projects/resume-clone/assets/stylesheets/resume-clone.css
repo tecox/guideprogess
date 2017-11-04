@@ -136,14 +136,8 @@ a:hover {
 	margin-bottom: 20px;
 }
 
-.short {
-
-}
 .mid {
 	height: 650px;
-}
-.tall {
-
 }
 
 /**************
@@ -219,7 +213,7 @@ h1 {
 }
 h2 {
 	font: 400 16px/24px "Heebo", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #4db1dd;
+	color: #09b; /* 4db1dd */
 	margin-bottom: 10px;
 }
 h3 {
