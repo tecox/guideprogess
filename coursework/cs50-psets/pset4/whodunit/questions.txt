@@ -1,0 +1,12 @@
+1.  A header file that allows us to declare our own fixed-width integer types.
+2.  Declaring your own names for types based on purpose in the program, and setting them ourselves makes them more predictable than the standard types.
+3.  1, 4, 4, 2
+4.  0x4d42
+5.  bfSize is the total file size in bytes. biSize is the number of bytes required for the BITMAPINFOHEADER struct (40).
+6.  We are dealing with a top-down bitmap with an origin in the upper left corner. Also, the file must be uncompressed.
+7.  biBitCount
+8.  If the infile doesn't exist or the outfile can't be written.
+9.  We are only reading one element of data from the given file.
+10. 3
+11. Offsets the file position indicator for the given file by a chosen number of bytes.
+12. One of the values fseek can offset the file position indicator relative to, in this case the current position indicator.
