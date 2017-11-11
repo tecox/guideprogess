@@ -17,7 +17,7 @@ All projects from the guide are filed under /projects
 #### Courses:
 - [Shay Howe's Learn to Code HTML and CSS](https://learn.shayhowe.com/html-css/) ([my coursework](https://github.com/tecox/guideprogess/tree/master/coursework/shayhowe-intro/styles-conference))
 #### Projects:
-- Copy [this](https://creativemarket.com/ikonome/686585-Material-Resume-Blue/screenshots/#screenshot2) Resume Template ([my project](https://github.com/tecox/guideprogess/tree/master/projects/resume-clone))
+- Copy [this](https://creativemarket.com/ikonome/686585-Material-Resume-Blue/screenshots/#screenshot2) Resume Template ([my project](https://htmlpreview.github.io/?https://github.com/tecox/guideprogess/blob/master/projects/resume-clone/resume-clone.html))
 #### Books:
 - [YDKJS: Up and Going](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going)
 - [YDKJS: Scope and Closures](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures)
