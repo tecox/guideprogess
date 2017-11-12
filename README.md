@@ -22,3 +22,9 @@ All projects from the guide are filed under /projects
 - [YDKJS: Up and Going](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going)
 - [YDKJS: Scope and Closures](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures)
 - [YDKJS: this and Object Prototypes](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
+
+### Additional Resources:
+- [Visualgo](https://visualgo.net/en)
+- [Speed Coder](http://www.speedcoder.net/#uf)
+- [Javascript MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [CSS Reset (Meyer)](http://meyerweb.com/eric/tools/css/reset/)
