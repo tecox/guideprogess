@@ -17,8 +17,12 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    // remember resize factor and filenames
-    int factor = (int) argv[1];
+    // store float input
+    float factor = atof(argv[1]);
+
+    printf("%f\n", factor);
+
+    // remember filenames
     char *infile = argv[2];
     char *outfile = argv[3];
 
